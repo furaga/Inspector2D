@@ -47,6 +47,13 @@ namespace Company.Inspector2D
             layerInfo.Add(new LayerControls(checkBox3, textBox3, comboBox3, pictureBox4, numericUpDown3));
             layerInfo.Add(new LayerControls(checkBox4, textBox4, comboBox4, pictureBox5, numericUpDown4));
             layerInfo.Add(new LayerControls(checkBox5, textBox5, comboBox5, pictureBox6, numericUpDown7));
+            layerInfo.Add(new LayerControls(checkBox6, textBox6, comboBox6, pictureBox7, numericUpDown8));
+            layerInfo.Add(new LayerControls(checkBox7, textBox7, comboBox7, pictureBox8, numericUpDown9));
+            layerInfo.Add(new LayerControls(checkBox8, textBox8, comboBox8, pictureBox9, numericUpDown10));
+            layerInfo.Add(new LayerControls(checkBox9, textBox9, comboBox9, pictureBox10, numericUpDown11));
+            layerInfo.Add(new LayerControls(checkBox10, textBox10, comboBox10, pictureBox11, numericUpDown12));
+            layerInfo.Add(new LayerControls(checkBox11, textBox11, comboBox11, pictureBox12, numericUpDown13));
+            layerInfo.Add(new LayerControls(checkBox12, textBox12, comboBox12, pictureBox13, numericUpDown14));
             pictureBox1.BackColor = Color.White;
         }
 
@@ -124,11 +131,6 @@ namespace Company.Inspector2D
             }
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void pictureBox5_MouseClick(object sender, MouseEventArgs e)
         {
             if (colorDialog2.ShowDialog() == DialogResult.OK)
@@ -140,31 +142,6 @@ namespace Company.Inspector2D
             string document = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
             string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(document, "Inspector2D"));
             System.Diagnostics.Process.Start(path);
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
